@@ -1,0 +1,6 @@
+git add .
+git commit -m "First Commit"
+git log
+git remote add origin https://github.com/hramkumar/DevOpsCodes.git
+git branch -M main
+git push -u origin main
