@@ -29,4 +29,5 @@ echo "Archiving log files.."
 tar -czvf logs_backup.tgz logs_backup
 echo ""
 echo ""
+date
 echo "Backup completed successfully.."
