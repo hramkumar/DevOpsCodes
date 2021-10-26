@@ -1,1 +1,3 @@
-This is a placeholder.
+Just the Plan command:
+
+terraform plan --var-file=test.tfvars
