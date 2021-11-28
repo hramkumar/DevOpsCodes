@@ -30,3 +30,9 @@ Setup necessary permissions using chmod command by accessing container as root u
     srw-rw-rw- 1 root 119 0 Nov 28 11:39 /var/run/docker.sock
     root@fe39ac48eced:/# exit
 
+In Jenkins Pipeline to build and push a Docker Image, use the below command(s):
+
+    docker build . -t hramkumar/demo-app:jma-1.1
+    echo $PASSWORD | docker login -u $USERNAME --password-stdin
+    docker push hramkumar/demo-app:jma-1.1
+
