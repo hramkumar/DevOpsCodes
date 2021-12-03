@@ -71,9 +71,9 @@ Dynamically increment application version in Jenkins Pipeline
                 script {
                     echo "building the docker image..."
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-                        sh "docker build -t nanajanashia/demo-app:${IMAGE_NAME} ."
+                        sh "docker build -t hramkumar/demo-app:${IMAGE_NAME} ."
                         sh "echo $PASS | docker login -u $USER --password-stdin"
-                        sh "docker push nanajanashia/demo-app:${IMAGE_NAME}"
+                        sh "docker push hramkumar/demo-app:${IMAGE_NAME}"
                     }
                 }
             }
